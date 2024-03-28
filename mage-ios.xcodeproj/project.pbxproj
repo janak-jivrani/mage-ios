@@ -133,6 +133,7 @@
 		B206879B2A6135DD00E3B190 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B206879F2A6135DD00E3B190 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B20687A12A6135DD00E3B190 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		B302D3C02BB5751100CA3B18 /* mage-ios (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mage-ios (iOS).entitlements"; sourceTree = "<group>"; };
 		B34F185E2AD9029F00207EBF /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		B34F185F2AD9029F00207EBF /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		B34F18602AD9029F00207EBF /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
@@ -268,6 +269,7 @@
 		B20687752A6135D600E3B190 = {
 			isa = PBXGroup;
 			children = (
+				B302D3C02BB5751100CA3B18 /* mage-ios (iOS).entitlements */,
 				B34F187C2AD902D200207EBF /* mage-ios--iOS--Info.plist */,
 				9C26195D2AD5C0BE00E0DDD3 /* .gitignore.md */,
 				B206877A2A6135D700E3B190 /* Shared */,
@@ -865,9 +867,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "mage-ios (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z922LUHAYQ;
+				DEVELOPMENT_TEAM = 27NZ4XDD2Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mage-ios--iOS--Info.plist";
@@ -882,7 +885,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.codecrow.mage-ios.11";
+				PRODUCT_BUNDLE_IDENTIFIER = io.codecrow.mage;
 				PRODUCT_NAME = "mage-ios";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -897,9 +900,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "mage-ios (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z922LUHAYQ;
+				DEVELOPMENT_TEAM = 27NZ4XDD2Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mage-ios--iOS--Info.plist";
@@ -914,7 +918,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.codecrow.mage-ios.11";
+				PRODUCT_BUNDLE_IDENTIFIER = io.codecrow.mage;
 				PRODUCT_NAME = "mage-ios";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -936,6 +940,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 27NZ4XDD2Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -945,7 +950,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.codecrow.mage-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = io.codecrow.mage;
 				PRODUCT_NAME = "mage-ios";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -965,6 +970,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 27NZ4XDD2Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -974,7 +980,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.codecrow.mage-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = io.codecrow.mage;
 				PRODUCT_NAME = "mage-ios";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
