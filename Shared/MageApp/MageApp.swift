@@ -36,5 +36,6 @@ extension AppDelegate: NotificationManagerDelegate {
     
     func didReceiveNotificationToken(token: String) {
         print("FCM Token: ", token)
+        UserDefaults.fcm_token = token
     }
 }

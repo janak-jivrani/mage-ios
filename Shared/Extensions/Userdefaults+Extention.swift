@@ -17,6 +17,14 @@ extension UserDefaults {
         }
     }
     
+    static var fcm_token: String {
+        get {
+            self.standard.string(forKey: "fcm_token") ?? ""
+        } set {
+            self.standard.set(newValue, forKey: "fcm_token")
+        }
+    }
+    
     static var userId: String {
         get {
             self.standard.string(forKey: "user_id") ?? ""

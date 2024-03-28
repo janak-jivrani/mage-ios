@@ -25,8 +25,8 @@ class ChannelModel: ObservableObject {
         header["userId"] = UserDefaults.userId
         header["User-Agent"] = "Mage-Mobile"
         
-        let param: [String: String] = [:]
-        header["deviceToken"] = UserDefaults.token
+        var param: [String: String] = [:]
+        param["deviceToken"] = UserDefaults.fcm_token
         
         let paramData = try PropertyListSerialization.data(fromPropertyList: param, format: PropertyListSerialization.PropertyListFormat.binary, options: 0)
         
