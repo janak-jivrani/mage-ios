@@ -35,6 +35,12 @@
 		B20687A62A6135DD00E3B190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206877C2A6135D700E3B190 /* ContentView.swift */; };
 		B20687A72A6135DD00E3B190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B206877D2A6135DD00E3B190 /* Assets.xcassets */; };
 		B20687A82A6135DD00E3B190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B206877D2A6135DD00E3B190 /* Assets.xcassets */; };
+		B302D3C22BB5754200CA3B18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B302D3C12BB5754200CA3B18 /* GoogleService-Info.plist */; };
+		B302D3C32BB5754200CA3B18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B302D3C12BB5754200CA3B18 /* GoogleService-Info.plist */; };
+		B302D3C62BB5757F00CA3B18 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302D3C42BB5757F00CA3B18 /* NotificationManager.swift */; };
+		B302D3C72BB5757F00CA3B18 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302D3C42BB5757F00CA3B18 /* NotificationManager.swift */; };
+		B302D3CF2BB5789600CA3B18 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302D3CE2BB5789600CA3B18 /* NotificationService.swift */; };
+		B302D3D32BB5789600CA3B18 /* MageNotification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B302D3CC2BB5789600CA3B18 /* MageNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B34F18682AD9029F00207EBF /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B34F185E2AD9029F00207EBF /* Poppins-ExtraLight.ttf */; };
 		B34F18692AD9029F00207EBF /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B34F185E2AD9029F00207EBF /* Poppins-ExtraLight.ttf */; };
 		B34F186A2AD9029F00207EBF /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B34F185F2AD9029F00207EBF /* Poppins-Light.ttf */; };
@@ -106,7 +112,28 @@
 			remoteGlobalIDString = B20687872A6135DD00E3B190;
 			remoteInfo = "mage-ios (macOS)";
 		};
+		B302D3D12BB5789600CA3B18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20687762A6135D600E3B190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B302D3CB2BB5789600CA3B18;
+			remoteInfo = MageNotification;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B302D3D72BB5789600CA3B18 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B302D3D32BB5789600CA3B18 /* MageNotification.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		059D7F8C19AF2971D2DD0896 /* Pods_mage_ios__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mage_ios__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +161,11 @@
 		B206879F2A6135DD00E3B190 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B20687A12A6135DD00E3B190 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		B302D3C02BB5751100CA3B18 /* mage-ios (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mage-ios (iOS).entitlements"; sourceTree = "<group>"; };
+		B302D3C12BB5754200CA3B18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B302D3C42BB5757F00CA3B18 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		B302D3CC2BB5789600CA3B18 /* MageNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MageNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B302D3CE2BB5789600CA3B18 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		B302D3D02BB5789600CA3B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B34F185E2AD9029F00207EBF /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		B34F185F2AD9029F00207EBF /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		B34F18602AD9029F00207EBF /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
@@ -198,6 +230,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B302D3C92BB5789600CA3B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -223,6 +262,7 @@
 		9C26193A2AD3BEED00E0DDD3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B302D3C52BB5757F00CA3B18 /* NotificationManager */,
 				9C26194B2AD3C25800E0DDD3 /* URL+Extensions.swift */,
 				B3A89E8D2AD822120034E3C1 /* Color.swift */,
 				B3A89EAD2AD827390034E3C1 /* Image.swift */,
@@ -276,6 +316,7 @@
 				B20687892A6135DD00E3B190 /* macOS */,
 				B20687922A6135DD00E3B190 /* Tests iOS */,
 				B206879E2A6135DD00E3B190 /* Tests macOS */,
+				B302D3CD2BB5789600CA3B18 /* MageNotification */,
 				B20687832A6135DD00E3B190 /* Products */,
 				4EDFE089ACB754F275E428A8 /* Pods */,
 				F516048DCB480A169881D827 /* Frameworks */,
@@ -296,6 +337,7 @@
 				B206877C2A6135D700E3B190 /* ContentView.swift */,
 				B206877D2A6135DD00E3B190 /* Assets.xcassets */,
 				B3A89E912AD8227A0034E3C1 /* Color.xcassets */,
+				B302D3C12BB5754200CA3B18 /* GoogleService-Info.plist */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -307,6 +349,7 @@
 				B20687882A6135DD00E3B190 /* mage-ios.app */,
 				B206878F2A6135DD00E3B190 /* Tests iOS.xctest */,
 				B206879B2A6135DD00E3B190 /* Tests macOS.xctest */,
+				B302D3CC2BB5789600CA3B18 /* MageNotification.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -335,6 +378,23 @@
 				B20687A12A6135DD00E3B190 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		B302D3C52BB5757F00CA3B18 /* NotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				B302D3C42BB5757F00CA3B18 /* NotificationManager.swift */,
+			);
+			path = NotificationManager;
+			sourceTree = "<group>";
+		};
+		B302D3CD2BB5789600CA3B18 /* MageNotification */ = {
+			isa = PBXGroup;
+			children = (
+				B302D3CE2BB5789600CA3B18 /* NotificationService.swift */,
+				B302D3D02BB5789600CA3B18 /* Info.plist */,
+			);
+			path = MageNotification;
 			sourceTree = "<group>";
 		};
 		B34F185D2AD9029F00207EBF /* Fonts */ = {
@@ -419,10 +479,12 @@
 				B206877F2A6135DD00E3B190 /* Frameworks */,
 				B20687802A6135DD00E3B190 /* Resources */,
 				508C24C94736F05E7F2FCBEE /* [CP] Embed Pods Frameworks */,
+				B302D3D72BB5789600CA3B18 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B302D3D22BB5789600CA3B18 /* PBXTargetDependency */,
 			);
 			name = "mage-ios (iOS)";
 			productName = "mage-ios (iOS)";
@@ -483,6 +545,23 @@
 			productReference = B206879B2A6135DD00E3B190 /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B302D3CB2BB5789600CA3B18 /* MageNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B302D3D42BB5789600CA3B18 /* Build configuration list for PBXNativeTarget "MageNotification" */;
+			buildPhases = (
+				B302D3C82BB5789600CA3B18 /* Sources */,
+				B302D3C92BB5789600CA3B18 /* Frameworks */,
+				B302D3CA2BB5789600CA3B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MageNotification;
+			productName = MageNotification;
+			productReference = B302D3CC2BB5789600CA3B18 /* MageNotification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -490,7 +569,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					B20687812A6135DD00E3B190 = {
@@ -506,6 +585,9 @@
 					B206879A2A6135DD00E3B190 = {
 						CreatedOnToolsVersion = 13.4;
 						TestTargetID = B20687872A6135DD00E3B190;
+					};
+					B302D3CB2BB5789600CA3B18 = {
+						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
@@ -526,6 +608,7 @@
 				B20687872A6135DD00E3B190 /* mage-ios (macOS) */,
 				B206878E2A6135DD00E3B190 /* Tests iOS */,
 				B206879A2A6135DD00E3B190 /* Tests macOS */,
+				B302D3CB2BB5789600CA3B18 /* MageNotification */,
 			);
 		};
 /* End PBXProject section */
@@ -540,6 +623,7 @@
 				B34F18782AD9029F00207EBF /* Poppins-SemiBold.ttf in Resources */,
 				B34F18702AD9029F00207EBF /* Poppins-Regular.ttf in Resources */,
 				B34F18722AD9029F00207EBF /* Poppins-Bold.ttf in Resources */,
+				B302D3C22BB5754200CA3B18 /* GoogleService-Info.plist in Resources */,
 				B3A89E922AD8227A0034E3C1 /* Color.xcassets in Resources */,
 				B34F186A2AD9029F00207EBF /* Poppins-Light.ttf in Resources */,
 				B34F18742AD9029F00207EBF /* Poppins-Black.ttf in Resources */,
@@ -558,6 +642,7 @@
 				B34F18792AD9029F00207EBF /* Poppins-SemiBold.ttf in Resources */,
 				B34F18712AD9029F00207EBF /* Poppins-Regular.ttf in Resources */,
 				B34F18732AD9029F00207EBF /* Poppins-Bold.ttf in Resources */,
+				B302D3C32BB5754200CA3B18 /* GoogleService-Info.plist in Resources */,
 				B3A89E932AD8227A0034E3C1 /* Color.xcassets in Resources */,
 				B34F186B2AD9029F00207EBF /* Poppins-Light.ttf in Resources */,
 				B34F18752AD9029F00207EBF /* Poppins-Black.ttf in Resources */,
@@ -575,6 +660,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B20687992A6135DD00E3B190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B302D3CA2BB5789600CA3B18 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -670,6 +762,7 @@
 				B34F187E2AD9067E00207EBF /* LoginModel.swift in Sources */,
 				9C2619522AD3CA9300E0DDD3 /* Channel.swift in Sources */,
 				B34F18842AD924B000207EBF /* Userdefaults+Extention.swift in Sources */,
+				B302D3C62BB5757F00CA3B18 /* NotificationManager.swift in Sources */,
 				B3A89E8E2AD822120034E3C1 /* Color.swift in Sources */,
 				B3A89E842AD81FB90034E3C1 /* LogInScreen.swift in Sources */,
 				B34F187A2AD9029F00207EBF /* AppFonts.swift in Sources */,
@@ -704,6 +797,7 @@
 				B34F187F2AD9067E00207EBF /* LoginModel.swift in Sources */,
 				9C2619532AD3CA9300E0DDD3 /* Channel.swift in Sources */,
 				B34F18852AD924B000207EBF /* Userdefaults+Extention.swift in Sources */,
+				B302D3C72BB5757F00CA3B18 /* NotificationManager.swift in Sources */,
 				B3A89E8F2AD822120034E3C1 /* Color.swift in Sources */,
 				B3A89E852AD81FB90034E3C1 /* LogInScreen.swift in Sources */,
 				B34F187B2AD9029F00207EBF /* AppFonts.swift in Sources */,
@@ -734,6 +828,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B302D3C82BB5789600CA3B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B302D3CF2BB5789600CA3B18 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -746,6 +848,11 @@
 			isa = PBXTargetDependency;
 			target = B20687872A6135DD00E3B190 /* mage-ios (macOS) */;
 			targetProxy = B206879C2A6135DD00E3B190 /* PBXContainerItemProxy */;
+		};
+		B302D3D22BB5789600CA3B18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B302D3CB2BB5789600CA3B18 /* MageNotification */;
+			targetProxy = B302D3D12BB5789600CA3B18 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -865,6 +972,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC3FB7A006C5B05F02C35945 /* Pods-mage-ios (iOS).debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "mage-ios (iOS).entitlements";
@@ -898,6 +1006,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DDE340F168EC90617ECBCF19 /* Pods-mage-ios (iOS).release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "mage-ios (iOS).entitlements";
@@ -1065,6 +1174,72 @@
 			};
 			name = Release;
 		};
+		B302D3D52BB5789600CA3B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27NZ4XDD2Q;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MageNotification/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MageNotification;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.codecrow.mage.MageNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B302D3D62BB5789600CA3B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27NZ4XDD2Q;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MageNotification/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MageNotification;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.codecrow.mage.MageNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1109,6 +1284,15 @@
 			buildConfigurations = (
 				B20687B52A6135DD00E3B190 /* Debug */,
 				B20687B62A6135DD00E3B190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B302D3D42BB5789600CA3B18 /* Build configuration list for PBXNativeTarget "MageNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B302D3D52BB5789600CA3B18 /* Debug */,
+				B302D3D62BB5789600CA3B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

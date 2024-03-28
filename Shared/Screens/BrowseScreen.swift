@@ -58,9 +58,7 @@ struct BrowseScreen: View {
 
 struct BrowseScreen_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationStack {
-            BrowseScreen()
-                .environmentObject(ChannelModel())
-        }
+        BrowseScreen()
+            .environmentObject(ChannelModel())
     }
 }

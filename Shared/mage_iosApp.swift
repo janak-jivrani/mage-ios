@@ -11,7 +11,8 @@ import SwiftUI
 struct mage_iosApp: App {
     
     @State var isFromLogin = false
-    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
             LogInScreen(isLogin: _isFromLogin)
