@@ -74,7 +74,7 @@ class HttpClient {
         let configuration = URLSessionConfiguration.default
         
         configuration.httpAdditionalHeaders = ["Content-Type": "application/json",
-                                               "x-api-key": "89ft2axc7yttqj4cba22qit7ztpebi"] // gbg5qzp3s17zhddy3tv6o9rkovqm2q
+                                               "x-api-key": "kzv2i5n40w02hodb1rhne9wduj26z8"] // gbg5qzp3s17zhddy3tv6o9rkovqm2q
         
         let session = URLSession(configuration: configuration)
         
@@ -89,11 +89,14 @@ class HttpClient {
             throw NetworkError.invalidResponse
         }
         
-        guard let result = try? JSONDecoder().decode(T.self, from: data) else {
+        do {
+            let result = try JSONDecoder().decode(T.self, from: data)
+            return result
+        } catch {
+            print("Decode Error", error)
+            print("Decode Model", T.self)
             throw NetworkError.decodingError
         }
-        
-        return result
         
     }
     

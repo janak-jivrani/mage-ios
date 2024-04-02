@@ -16,7 +16,7 @@ struct ChannelCellView: View {
             HStack(alignment: .firstTextBaseline, spacing: AppConfig.smallRadius) {
                 Text(channel.title)
                     .font(AppFonts.font(size: 16, style: .bold))
-                Text(channel.userDetails.username)
+                Text(channel.userDetails?.username ?? "")
                     .font(AppFonts.font(size: 16, style: .medium))
                 Spacer()
             }

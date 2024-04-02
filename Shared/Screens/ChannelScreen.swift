@@ -25,7 +25,7 @@ struct ChannelScreen: View {
 
 struct ChannelScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ChannelScreen(channel: Channel(_id: "01234", title: "Test Channel", description: "Test channel description", userDetails: User(_id: "1234", username: "testgagansuie", displayName: "Test Gagan Suie", avatar: "img" )))
+        ChannelScreen(channel: Channel(_id: 01234, title: "Test Channel", description: "Test channel description", userDetails: User(_id: "1234", username: "testgagansuie", displayName: "Test Gagan Suie", avatar: "img" )))
             .environmentObject(ChannelModel())
     }
 }

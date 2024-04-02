@@ -15,9 +15,9 @@ struct AuthData: Codable, Hashable {
 }
 
 struct AuthUserData: Codable, Hashable {
-    let _id: String?
+    let _id: Int?
     let avatar: String?
-    let createdAt: Int?
+    let createdAt: String?
     let displayName: String?
     let isOnline: Bool?
     let planDetails: PlanDetails?
