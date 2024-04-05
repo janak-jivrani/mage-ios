@@ -12,6 +12,7 @@ class ChannelModel: ObservableObject {
     
     let client = HttpClient()
     @Published var channels: [Channel] = []
+    @Published var favorite: [favorite] = []
     
     func fetchChannels() async throws {
         channels = try await client.load(Resource(url: URL.allChannels))
@@ -27,11 +28,14 @@ class ChannelModel: ObservableObject {
         
         var param: [String: String] = [:]
         param["deviceToken"] = UserDefaults.fcm_token
+        print(param)
         
-        let paramData = try PropertyListSerialization.data(fromPropertyList: param, format: PropertyListSerialization.PropertyListFormat.binary, options: 0)
+        let paramData = try JSONSerialization.data(withJSONObject: param)
+
+//        let paramData = try PropertyListSerialization.data(fromPropertyList: param, format: PropertyListSerialization.PropertyListFormat.binary, options: 0)
         
         print(paramData)
-        channels = try await client.load(Resource(url: URL.favorites, headers: header, method: .patch(paramData)))
-        print(channels)
+        favorite = try await client.load(Resource(url: URL.favorites, headers: header, method: .patch(paramData)))
+        print(favorite)
     }
 }

@@ -81,11 +81,15 @@ class HttpClient {
         let (data, response) = try await session.data(for: request)
         
         let string = String(data: data, encoding: .utf8)!
+        print("API Request", request)
         print("API RESPONSE: ", string)
         
         guard let httpResponse = response as? HTTPURLResponse,
               httpResponse.statusCode == 200 || httpResponse.statusCode == 201
         else {
+            if let httpResponse = response as? HTTPURLResponse {
+                print("API Response With Error Code:\n", request, httpResponse.statusCode)
+            }
             throw NetworkError.invalidResponse
         }
         

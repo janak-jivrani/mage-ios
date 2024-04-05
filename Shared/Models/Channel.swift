@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct favorite: Codable, Hashable {
+    
+}
+
 struct Channel: Codable, Hashable {
     var _id: Int
     let title: String
