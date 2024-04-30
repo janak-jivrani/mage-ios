@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyClhKEe3Oz8du2jCQ52taXRPmaQbmEhNtw</string>
+	<string>AIzaSyANEyeZ1aHmAEmUJenx2EP05xp_bYMbGrU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>518394378279</string>
+	<string>1012053466850</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>io.codecrow.mage</string>
 	<key>PROJECT_ID</key>
-	<string>mage-deeff</string>
+	<string>mage-dev-922da</string>
 	<key>STORAGE_BUCKET</key>
-	<string>mage-deeff.appspot.com</string>
+	<string>mage-dev-922da.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:518394378279:ios:4739e00eb3df5a9cc77602</string>
+	<string>1:1012053466850:ios:091f4ef2227966551cc8bb</string>
 </dict>
 </plist>

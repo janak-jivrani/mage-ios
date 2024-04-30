@@ -11,6 +11,13 @@ protocol NotificationManagerDelegate {
 class NotificationManager: NSObject, MessagingDelegate, UNUserNotificationCenterDelegate {
     
     var delegate: NotificationManagerDelegate?
+    private lazy var pushNotificationOption: UNNotificationPresentationOptions = {
+        if #available(iOS 14.0, *) {
+            return [.alert, .banner, .sound]
+        } else {
+            return [.alert, .sound]
+        }
+    }()
     
     func registerForPushNotifications() {
         Messaging.messaging().delegate = self
@@ -39,8 +46,20 @@ class NotificationManager: NSObject, MessagingDelegate, UNUserNotificationCenter
         updateFirestorePushTokenIfNeeded()
     }
     
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        let data = notification.request.content.userInfo
+        print("Notification Data: \(data)")
+        completionHandler(pushNotificationOption)
+    }
+    
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        print("response, ", response)
+        let data = response.notification.request.content.userInfo
+        print("Notification Data: \(data)")
+        completionHandler()
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification data: [AnyHashable : Any]) {
+        print("Notification Data New", data)
     }
     
 }
